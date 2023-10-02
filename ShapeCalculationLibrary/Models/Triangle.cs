@@ -17,7 +17,7 @@ public class Triangle : IArea
     {
         _sides = new List<double>(new[] { side1, side2, side3 });
         _sides.Sort();
-        if (_sides.Any(x => x < 0))
+        if (_sides.Any(x => x <= 0))
         {
             throw new ArgumentException("Number should be non-negative.");
         }
