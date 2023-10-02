@@ -12,7 +12,7 @@ public class ShapeManager
     /// </summary>
     /// <param name="shape">Фигура.</param>
     /// <returns>Площадь переданной фигуры с округлением до 2 значений после запятой.</returns>
-    public double GetAreaShape(IArea shape)
+    public static double GetAreaShape(IArea shape)
     {
         return Math.Round(shape.CalculateArea(), 2);
     }
