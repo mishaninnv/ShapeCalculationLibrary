@@ -13,7 +13,7 @@ public class Circle : IArea
     /// <exception cref="ArgumentException">Выбрасывается если радиус меньше 0.</exception>
     public Circle(double radius)
     {
-        if (radius < 0)
+        if (radius <= 0)
         {
             throw new ArgumentException("Number should be non-negative.");
         }
